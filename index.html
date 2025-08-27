@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Quad Attack!</title>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+		<script type="text/javascript" language="javascript" src="js/mootools.js"></script>	
+		<script type="text/javascript" language="javascript" src="js/mootools-1.2.4.4-more.js"></script>				
+		<script type="text/javascript" language="javascript" src="js/quadattack.js"></script>
+	</head>	
+	
+	<body>
+		<div class="layer" id="form">
+			<div class="overlay"></div>
+			<div class="layerbox">
+				<form>
+					<fieldset>
+						<legend id="form_legend">Quad Attack!</legend>
+						<strong id="form_winner" style="display: none;"></strong>
+						<p>Please enter your names for the new round.</p>
+						<label for="player1name">Player 1:</label><input id="player1name" type="text" maxlength="50" value="player1" /><br />
+						<label for="player2name">Player 2:</label><input id="player2name" type="text" maxlength="50" value="player2" /><br />
+						<button id="form_button_start" type="button">Start!</button>
+						<button id="form_button_restart" type="button" style="display: none;">Restart</button>
+						<a href="#">Read game rules</a>
+					</fieldset>	
+				</form>	
+			</div>
+		</div>
+		
+		<div id="quadattack">
+			<p id="info"></p>
+			<div id="container">
+				<div id="player1"></div>
+				<div id="gameboard"></div>
+				<div id="player2"></div>			
+			</div>
+		</div>
+	</body>	
+</html>
